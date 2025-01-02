@@ -1,0 +1,63 @@
+.add-btn {
+    background-color: rgb(255, 216, 20);
+    color: black;
+    border: none;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+    vertical-align: top;
+}
+
+.add-btn:hover {
+    opacity: 0.8;
+}
+
+.add-btn:active {
+    opacity: 0.5;
+}
+
+.save-btn {
+    background-color: white;
+    border-color: rgb(6, 95, 212);
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 600;
+    color: rgb(6, 95, 212);
+    padding: 10px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.15s,
+    color 1s;
+    vertical-align: top;
+}
+
+.save-btn:hover {
+    background-color: rgb(6, 95, 212);
+    color: white;
+}
+
+.save-btn:active {
+    opacity: 0.7; /* Opacity akan otomatis ke 0.7 ketika diklik*/
+}
+
+.apply-btn {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 18px;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.apply-btn:hover {
+    box-shadow: 3px 3px 10px rgba(0,0,0, 0.3);
+}

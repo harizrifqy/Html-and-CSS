@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+    <body style="padding-bottom: 1000px;">
+        <div style="
+            display: grid; 
+            grid-template-columns: 200px 75px
+            ;">
+            <div style="background-color:
+            lightblue;">200px</div>
+            <div style="background-color:
+            lightpink;">75px</div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+            display: grid; 
+            grid-template-columns: 50px 200px 
+            75px;">
+            <div style="background-color:
+            lightblue;">col1</div>
+            <div style="background-color:
+            lightpink;">col2</div>
+            <div style="background-color:
+            lightblue;">col3</div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+            display: grid; 
+            grid-template-columns: 100px 1fr;
+            ">
+            <div style="background-color:
+            lightblue;">100px</div>
+            <div style="background-color:
+            lightpink;">1 fr</div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+            display: grid; 
+            grid-template-columns: 100px 1fr 2fr;
+            ">
+            <div style="background-color:
+            lightblue;">100px</div>
+            <div style="background-color:
+            lightpink;">1 fr</div>
+            <div style="background-color:
+            lightblue;">2 fr</div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+            display: grid; 
+            grid-template-columns: 50px 50px 
+            50px 50px;
+            column-gap: 20px; 
+            row-gap: 10px;">
+            <div style="background-color:
+            lightblue;">col1</div>
+            <div style="background-color:
+            lightpink;">col2</div>
+            <div style="background-color:
+            lightblue;">col3</div>
+            <div style="background-color:
+            lightpink;">col24</div>
+            <div style="background-color:
+            lightblue;">col5</div>
+            <div style="background-color:
+            lightpink;">col6</div>
+            <div style="background-color:
+            lightblue;">col7</div>
+            <div style="background-color:
+            lightpink;">col8</div>
+        </div>
+    </body>
+</html>
