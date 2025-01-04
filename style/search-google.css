@@ -1,0 +1,169 @@
+
+body {
+    background-image: url(Images/Mercy-G63.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+.containerGoogle {
+    display: block;
+    text-align: center;
+}
+
+.google-search {
+    font-family: Roboto, Arial;
+    font-size: 95px;
+    height: 92px;
+    background: linear-gradient(to right, orange, red, blue, green);
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 0.75;
+    margin-top: 1.8em;
+    margin-bottom: 40px;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    font-size: 16px;
+    width: 100%;
+    max-width: 50%;
+    padding: 14px 50px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    outline: none;
+    box-sizing: border-box; /* Pastikan padding dihitung dengan lebar elemen */
+}
+
+.icon {
+    position: absolute;
+    color: grey;
+    left: 26.3%;
+    pointer-events: none; /* Mencegah ikon mengganggu input */
+}
+
+.icon-camera {
+    position: absolute;
+    color: red;
+    left: 70%;
+    pointer-events: none; /*Mencegah ikon mengganggu input*/
+}
+
+.btn-1, .btn-2 {
+    background-color: rgba(247, 243, 243, 0.338);
+    color: black;
+    border: none;
+    margin-top: 20px;
+    padding: 12px 18px;
+    font-size: 17px;
+    border-radius: 2px;
+}
+
+.btn-1 {
+    margin-left: 40%;
+}
+
+.btn-2 {
+    margin-left: 20px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .google-search {
+        font-size: 85px; /* Ukuran teks lebih kecil dibandingkan ukuran default */
+        margin-top: 2em;
+        margin-bottom: 30px;
+    }
+
+    .search-box input {
+        max-width: 60%; /* Memberikan lebih banyak ruang untuk input */
+        padding: 14px 45px; /* Tambahkan padding kiri untuk ikon */
+    }
+
+    .icon {
+        left: 22%; /* Ikon menyesuaikan posisi untuk ukuran layar lebih besar */
+        font-size: 16px; /* Sesuaikan ukuran ikon */
+    }
+
+    .btn-1, .btn-2 {
+        font-size: 16px; /* Ukuran font tombol lebih kecil */
+        padding: 10px 16px; /* Padding tombol disesuaikan */
+        margin-top: 20px;
+    }
+
+    .btn-1 {
+        margin-left: 16em /* Disesuaikan untuk layar yang lebih besar */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .google-search {
+        font-size: 70px;
+        margin-top: 1.8em;
+        margin-bottom: 0;
+    }
+
+    .search-box input {
+        max-width: 60%;
+        padding: 12px 45px;
+    }
+
+    .icon {
+        left: 23%; /* Atur posisi ikon lebih ke dalam */
+    }
+
+    .btn-1, .btn-2 {
+        font-size: 14px;
+        padding: 6px 8px;
+        margin-top: 10px;
+    }
+
+    .btn-1 {
+        margin-left: 72px;
+    }
+}
+
+@media (max-width: 480px) {
+    .google-search {
+        font-size: 50px;
+        margin-top: 1.8em;
+        margin-bottom: 0;
+    }
+
+    .search-box input {
+        max-width: 80%;
+        padding: 10px 40px;
+    }
+
+    .icon {
+        left: 15%;
+    }
+
+    button {
+        display: inline-block;
+    }
+
+    button.btn-1, button.btn-2 {
+        display: inline-block;
+        background-color: rgba(247, 243, 243, 0.338);
+        color: black;
+        border: none;
+        margin-top: 0;
+        padding: 8px 6px;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+}

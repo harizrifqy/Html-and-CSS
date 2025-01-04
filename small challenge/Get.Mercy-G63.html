@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercy G63 AMG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        p {
+            font-family: Roboto, Arial;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .container-cards {
+        display: flex;
+        gap: 20px; /* Jarak antar card */
+        justify-content: center; /* Rata tengah container */
+        flex-wrap: wrap; /* Agar card tetap responsif */
+        margin: 20px auto;
+        }
+
+        .layout-purchase {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 200px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #e4dddd;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .img-product {
+            display: block;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 4px;
+        }
+
+
+        .img-order {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            object-position: center;
+            vertical-align: top;
+            border-radius: 4px;
+            margin-top: 12px;
+        }
+
+        .namebrand {
+            font-size: 16px;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+
+        .price {
+            display: inline-block;
+            width: 160px;
+            font-size: 14px;
+            margin-top: 12px;
+            margin-left: 6px;
+            color: #606060;
+        }
+
+        .btn-buy {
+            padding: 10px 24px;
+            margin-top: 20px;
+            background-color: #8D77AB;
+            border: none;
+            color: white;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-cards">
+        <div class="layout-purchase">
+            <div class="img-layout">
+                <img class="img-product" src="Images/Mercy-G63.jpg" alt="">
+            </div>
+            <div class="info-product">
+                <p class="namebrand">Mercy G63 AMG</p>
+                <img class="img-order" src="Images/Mercy-G63.jpg" alt="">
+                <p class="price">2 pre-orders</p>
+                <button class="btn-buy">Pre Order</button>
+            </div>
+        </div>
+
+        <div class="layout-purchase">
+            <div class="img-layout">
+                <img class="img-product" src="Images/Mercy-G63.jpg" alt="">
+            </div>
+            <div class="info-product">
+                <p class="namebrand">Mercy G63 AMG</p>
+                <img class="img-order" src="Images/Mercy-G63.jpg" alt="">
+                <p class="price">2 pre-orders</p>
+                <button class="btn-buy">Pre Order</button>
+            </div>
+        </div>
+
+        <div class="layout-purchase">
+            <div class="img-layout">
+                <img class="img-product" src="Images/Mercy-G63.jpg" alt="">
+            </div>
+            <div class="info-product">
+                <p class="namebrand">Mercy G63 AMG</p>
+                <img class="img-order" src="Images/Mercy-G63.jpg" alt="">
+                <p class="price">2 pre-orders</p>
+                <button class="btn-buy">Pre Order</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

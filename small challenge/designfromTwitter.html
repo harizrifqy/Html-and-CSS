@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        p {
+            font-family: Roboto, Arial;
+            margin: 0;
+        }
+        
+        body {
+            margin: 0;
+        }
+
+        .content {
+            display: flex;
+            margin-top: 30px;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+
+        .left-section {
+            width: 90px;
+        }
+        
+        .img-profil {
+            width: 63px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 35px;
+            margin-left: 10px;
+        }
+
+
+        .middle-section {
+            display: flex;
+            width: 300px;
+            height: 100px;
+            line-height: 22px;
+        }
+
+        .name-user {
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .name-user span {
+            font-weight: 400;
+            color: grey;
+        }
+    
+        .card {
+            display: flex;
+            align-items: center;
+            border-radius: 18px;
+            border: 1px solid #d1d1d1;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 350px;
+            margin-top: 10px;
+        }
+        .card .icon {
+            width: 180px;
+            height: 100px;
+            background-color: #d1d1d1;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .card .details {
+            padding: 10px 15px;
+            flex-grow: 1;
+        }
+        .card .details .url {
+            color: #999;
+            margin-bottom: 5px;
+        }
+        .card .details .description {
+            font-weight: 500;
+            color: #333;
+            margin: 0;
+        }
+    </style>
+</head>
+    <body>
+        <div class="content">
+            <div class="left-section">
+                <img class="img-profil" src="Images/Mercy-G63.jpg" alt="">
+            </div>
+            
+            <div class="middle-section">
+                <div class="profil-user" >
+                    <p class="name-user">
+                            studycode.com <span>@StudyCode</span>
+                    </p>
+                    <p class="comment-user">
+                        What is backend web development? 
+                        A complete overview. New video is up!
+                    </p>
+                    <div class="card">
+                        <div class="icon"></div>
+                        <div class="details">
+                            <p class="url">youtube.com</p>
+                            <p class="description">Backend web development - a complete overview (2021)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="buttom-section">
+            </div>
+        </div.comment>
+    </body>
+</html>

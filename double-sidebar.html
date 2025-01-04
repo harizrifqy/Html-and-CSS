@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        p {
+            font-family: Roboto, Arial;
+        }
+
+        .sidebar-left {
+            position: fixed;
+            width: 68px;
+            height: 237px;
+            background-color: rgb(43, 43, 43);
+        }
+        .profil {
+            width:50px;
+            height: 50px;
+            border-radius: 30px;
+            object-fit: cover;
+            margin-top: 2px;
+            margin-left: 8px;
+        }
+    
+        #profil-1 {
+            margin-top: 16px;
+        }
+    
+        .sidebar-right {
+            background-color: rgb(55, 55, 55);
+            color: white;
+            position: fixed;
+            width: 150px;
+            height: 237px;
+            left: 76px;
+        }
+    
+        .info {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    
+        #info-plus {
+            margin-left: 80px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    
+        .info, .new-video,
+        .faq, .updates{
+            margin-left: 14px;
+        }
+    
+        .new-video,
+        .faq, .updates{
+            color: rgb(168, 166, 166);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar-left">
+            <img src="Images/Mercy-G63.jpg" alt="" class="profil" id="profil-1" >
+            <img src="Images/Mercy-G63.jpg" alt="" class="profil">
+            <img src="Images/Mercy-G63.jpg" alt="" class="profil">
+        </div>
+        <div class="sidebar-right">
+            <p class="info">INFO <span id="info-plus">+</span></p>
+            <p class="new-video"># new-videos</p>
+            <p class="updates"># updates</p>
+            <p class="faq"># faq</p>
+        </div>
+    </div>
+
+</body>
+</html>
