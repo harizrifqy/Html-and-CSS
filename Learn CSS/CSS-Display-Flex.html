@@ -96,8 +96,29 @@
         .container-empat {
             max-width: 800px;
             margin: 50px auto;
+            display: flex;
         }
 
+        .card {
+            border: 1px solid grey;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            overflow: hidden; 
+            margin: 10px;
+            flex-grow: 1;  /*untuk memastikan supaya ukuranya benar-benar sama*/
+        }
+
+        .card .header{
+            height: 150px;
+            background-color: gray;
+        }
+        .card .content{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .card.big{
+            transform: scale(1.13); /*untuk membuat card lebih besar dari yang lainnya*/
+        }
 
         /* Responsive */
         @media(min-width: 600px) {
@@ -198,6 +219,14 @@
     <!-- Latihan 4 - Card -->
     <div class="container-empat">
         <article class="card">
+            <div class="header"></div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Laudantium, alias!</p>
+                <button>Order Now!</button>
+            </div>
+        </article>
+        <article class="card big">
             <header class="header"></header>
             <div class="content">
                 <p>Lorem ipsum dolor sit amet consectetur
@@ -205,6 +234,14 @@
                 <button>Order Now!</button>
             </div>
         </article>
+        <article class="card">
+            <header class="header"></header>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Laudantium, alias!</p>
+                <button>Order Now!</button>
+            </div>
+        </article> 
     </div>
 </body>
 
