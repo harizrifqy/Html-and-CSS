@@ -21,25 +21,66 @@
 
         /*  Latihan 1 */
         .container-satu {
-            width: 800px;
+            max-width: 800px;
             margin: 50px auto;
             background-color: white;
             padding: 20px;
             box-sizing: border-box;
             display: flex;
         }
+
         .kolom-utama{
-            /* flex: <flex-grow> <flex-shrink> <flex-basis>; */
-            flex: 1; /* hanya mengatur flex-grow saja */
+            flex-grow: 3;
             order: 2;
         }
         .sidebar-satu{
-            flex: 1;
-            order: 1; /*untuk mengatur urutan*/
+            flex-grow: 1;
+            order: 1;
         }
         .sidebar-dua{
-            flex: 1;
-            order: 3; 
+            flex-grow: 1;
+            order: 3;
+        }
+
+        /* Latihan 2 */
+        .container-dua {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .layanan-satu,
+        .layanan-dua,
+        .layanan-tiga {
+            padding: 20px;
+            box-sizing: border-box;
+            /* margin-bottom: 20px; */
+        }
+
+        .layanan-satu {
+            background-color: blue;
+            color: white;
+        }
+        .layanan-dua {
+            background-color: greenyellow;
+        }
+        .layanan-tiga {
+            background-color: red;
+            color: white;
+        }
+        
+
+        /* Responsive */
+        @media( min-width: 600px ){
+            .container-dua {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .layanan-satu,
+            .layanan-dua,
+            .layanan-tiga{
+                width: 30%;
+            }
         }
     </style>
 </head>
@@ -69,11 +110,31 @@
                 <li><a href="">Link 5</a></li>
             </ul>
         </div>
-        <div class="sideba-dua">
+        <div class="sidebar-dua">
             <h3>Sidebar dua</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Cum repellendus saepe eius, eum similique quam.
             </p>
+        </div>
+    </div>
+    <!-- Akhir Latihan 1 -->
+
+    <!-- Latihan 2 - Service / Features -->
+
+    <div class="container-dua">
+        <div class="layanan-satu">
+            <h4>Layanan 1</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, voluptates</p>
+        </div>
+        <div class="layanan-dua">
+            <h4>Layanan 2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus necessitatibus, corporis officia ex
+                earum enim</p>
+        </div>
+        <div class="layanan-tiga">
+            <h4>Layanan 3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad architecto voluptate enim perferendis velit
+                quasi laudantium dolor perspiciatis!</p>
         </div>
     </div>
 </body>
