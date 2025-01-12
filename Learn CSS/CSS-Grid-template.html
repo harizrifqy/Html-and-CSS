@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #ddd;
+            text-align: center;
+            margin: 30px;
+        }
+
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            display: grid; 
+            /* urutannya row / baris dulu baru columns / kolom */
+            grid-template:[start-baris1] 'header header header' 50px
+            [end-baris1 dan start-baris2] 'footer footer footer' 100px [end-baris2]
+            / 1fr 2fr 3fr;
+        }
+
+        .header,
+        .content{
+            background-color: lightpink;
+        }
+
+        .sidebar, 
+        .footer{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
