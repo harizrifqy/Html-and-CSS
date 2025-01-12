@@ -53,7 +53,7 @@
         .layanan-tiga {
             padding: 20px;
             box-sizing: border-box;
-            /* margin-bottom: 20px; */
+            margin-bottom: 20px;
         }
 
         .layanan-satu {
@@ -68,6 +68,25 @@
             color: white;
         }
         
+        /* Latihan 3 */
+        .container-tiga{
+            max-width: 800px; /*max-width berfungsi agar responsive*/
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap; /*supaya gambar menjadi columns atau menurun kebawah*/
+            justify-content: center;
+        }
+        
+        .thumbnail{
+            width: 50%;
+        }
+        .thumbnail img {
+            width: 100%;
+        }
+
+
+
+
 
         /* Responsive */
         @media( min-width: 600px ){
@@ -80,6 +99,10 @@
             .layanan-dua,
             .layanan-tiga{
                 width: 30%;
+            }
+
+            .thumbnail{
+                width: 25%;
             }
         }
     </style>
@@ -120,7 +143,6 @@
     <!-- Akhir Latihan 1 -->
 
     <!-- Latihan 2 - Service / Features -->
-
     <div class="container-dua">
         <div class="layanan-satu">
             <h4>Layanan 1</h4>
@@ -137,6 +159,31 @@
                 quasi laudantium dolor perspiciatis!</p>
         </div>
     </div>
+    <!-- Akhir latihan 2 -->
+
+    <!-- Latihan 3 - Gallery -->
+    <div class="container-tiga">
+        <div class="thumbnail">
+            <img src="images/dream-car-1.jpg" alt="">
+        </div>
+        <div class="thumbnail">
+            <img src="images/dream-car-2.jpg" alt="">
+        </div>
+        <div class="thumbnail">
+            <img src="images/dream-car-3.jpg" alt="">
+        </div>
+        <div class="thumbnail">
+            <img src="images/dream-car-1.jpg" alt="">
+        </div>
+        <div class="thumbnail">
+            <img src="images/dream-car-2.jpg" alt="">
+        </div>
+        <div class="thumbnail">
+            <img src="images/dream-car-3.jpg" alt="">
+        </div>
+    </div>
+    <!-- Akhir latihan 3 -->
+    
 </body>
 
 </html>
