@@ -26,8 +26,21 @@
             background-color: white;
             padding: 20px;
             box-sizing: border-box;
+            display: flex;
         }
-        
+        .kolom-utama{
+            /* flex: <flex-grow> <flex-shrink> <flex-basis>; */
+            flex: 1; /* hanya mengatur flex-grow saja */
+            order: 2;
+        }
+        .sidebar-satu{
+            flex: 1;
+            order: 1; /*untuk mengatur urutan*/
+        }
+        .sidebar-dua{
+            flex: 1;
+            order: 3; 
+        }
     </style>
 </head>
 
