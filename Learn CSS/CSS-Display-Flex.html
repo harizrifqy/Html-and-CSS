@@ -29,15 +29,17 @@
             display: flex;
         }
 
-        .kolom-utama{
+        .kolom-utama {
             flex-grow: 3;
             order: 2;
         }
-        .sidebar-satu{
+
+        .sidebar-satu {
             flex-grow: 1;
             order: 1;
         }
-        .sidebar-dua{
+
+        .sidebar-dua {
             flex-grow: 1;
             order: 3;
         }
@@ -60,36 +62,45 @@
             background-color: blue;
             color: white;
         }
+
         .layanan-dua {
             background-color: greenyellow;
         }
+
         .layanan-tiga {
             background-color: red;
             color: white;
         }
-        
+
         /* Latihan 3 */
-        .container-tiga{
-            max-width: 800px; /*max-width berfungsi agar responsive*/
+        .container-tiga {
+            max-width: 800px;
+            /*max-width berfungsi agar responsive*/
             margin: 50px auto;
             display: flex;
-            flex-wrap: wrap; /*supaya gambar menjadi columns atau menurun kebawah*/
+            flex-wrap: wrap;
+            /*supaya gambar menjadi columns atau menurun kebawah*/
             justify-content: center;
         }
-        
-        .thumbnail{
+
+        .thumbnail {
             width: 50%;
         }
+
         .thumbnail img {
             width: 100%;
         }
 
 
-
+        /* Latihan 4 */
+        .container-empat {
+            max-width: 800px;
+            margin: 50px auto;
+        }
 
 
         /* Responsive */
-        @media( min-width: 600px ){
+        @media(min-width: 600px) {
             .container-dua {
                 display: flex;
                 justify-content: space-between;
@@ -97,11 +108,11 @@
 
             .layanan-satu,
             .layanan-dua,
-            .layanan-tiga{
+            .layanan-tiga {
                 width: 30%;
             }
 
-            .thumbnail{
+            .thumbnail {
                 width: 25%;
             }
         }
@@ -183,7 +194,18 @@
         </div>
     </div>
     <!-- Akhir latihan 3 -->
-    
+
+    <!-- Latihan 4 - Card -->
+    <div class="container-empat">
+        <article class="card">
+            <header class="header"></header>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Laudantium, alias!</p>
+                <button>Order Now!</button>
+            </div>
+        </article>
+    </div>
 </body>
 
 </html>
